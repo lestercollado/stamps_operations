@@ -2,10 +2,11 @@
 {
     'name': "Sellos Operaciones",
 
-    'summary': "Módulo para la gestión de entrega/recepción sellos de la Dirección de Operaciones.",
+    'summary': "Entrega/recepción sellos de la Dirección de Operaciones.",
 
     'description': """
-        Breve descripción
+        Módulo para la gestión de entrega/recepción sellos de la Dirección de Operaciones. \n
+        Registrar quien recibe y entrega los sellos.
     """,
 
     'author': "Dirección de Operaciones",
@@ -18,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['contacts'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
