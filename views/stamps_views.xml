@@ -5,9 +5,14 @@
         <field name="priority" eval="16"/>
         <field name="arch" type="xml">
             <tree string="Sellos Entregados">
+                <field name="date"/>
                 <field name="employee_ids"/>
                 <field name="employee_recibe_ids"/>
+                <field name="area"/>
                 <field name="amount_deliver"/>
+                <!-- <field name="letter"/> -->
+                <field name="stamps_start"/>
+                <field name="stamps_end"/>
             </tree>
         </field>
     </record>
@@ -22,9 +27,14 @@
                 <sheet>
                     <group>
                         <group>
+                            <field name="date"/>
                             <field name="employee_ids"/>
                             <field name="employee_recibe_ids"/>
+                            <field name="area"/>
+                            <!-- <field name="letter"/> -->
+                            <field name="stamps_start"/>
                             <field name="amount_deliver"/>
+                            <field name="stamps_end"/>
                         </group>
                     </group>
                 </sheet>
