@@ -1,0 +1,43 @@
+<odoo>
+    <record model="ir.ui.view" id="stamps_views_list">
+        <field name="name">view.stamps.list</field>
+        <field name="model">stamps.stamps</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <tree string="Sellos Entregados">
+                <field name="employee_ids"/>
+                <field name="employee_recibe_ids"/>
+                <field name="amount_deliver"/>
+            </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="stamps_views_form">
+        <field name="name">view.stamps.form</field>
+        <field name="model">stamps.stamps</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">        
+            <form string="Fomulario">
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="employee_ids"/>
+                            <field name="employee_recibe_ids"/>
+                            <field name="amount_deliver"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="actions_stamps">
+        <field name="name">Sellos</field>
+        <field name="res_model">stamps.stamps</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_stamps_parent" sequence="5"  name="Sellos"/>
+    <menuitem id="menu_stamps" sequence="5" parent="menu_stamps_parent" name="Sellos" action="actions_stamps"/>
+</odoo>
