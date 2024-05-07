@@ -13,6 +13,8 @@
                 <!-- <field name="letter"/> -->
                 <field name="stamps_start"/>
                 <field name="stamps_end"/>
+                <field string="Usuario Registro" name="write_uid"/>
+                <field string="Fecha Registro" name="write_date"/>
             </tree>
         </field>
     </record>
